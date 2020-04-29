@@ -7,6 +7,8 @@
 
 #include <unistd.h>
 
+#define MAX_WAIT_TIME 100000
+
 typedef struct dispatch_fns_args_struct {
     int count;
     bathroom_queue * bq;
@@ -21,7 +23,7 @@ void* dispatchMen_fn(void* pointer) {
     dispatch_fns_args_struct* args = (dispatch_fns_args_struct*) pointer;
     for (int i = 0; i < args->count; ++i) {
         bathroom_queue_enqueue(args->bq, true, i);
-        usleep((__useconds_t) (random() % 50000));
+        usleep((__useconds_t) (random() % MAX_WAIT_TIME));
     }
     return NULL;
 }
@@ -30,7 +32,7 @@ void* dispatchWomen_fn(void* pointer) {
     dispatch_fns_args_struct* args = (dispatch_fns_args_struct*) pointer;
     for (int i = 0; i < args->count; ++i) {
         bathroom_queue_enqueue(args->bq, false, i);
-        usleep((__useconds_t) (random() % 50000));
+        usleep((__useconds_t) (random() % MAX_WAIT_TIME));
     }
     return NULL;
 }

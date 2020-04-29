@@ -44,8 +44,8 @@ void bathroom_woman_wants_to_enter(bathroom* b) {
 void bathroom_man_wants_to_enter(bathroom* b) {
     sem_wait(&(b->bathroom_entry_mutex));
     sem_wait(&(b->full_mutex));
-    sem_wait(&(b->men_mutex));
-    if(b->people_present==0){
+    sem_wait(&(b->men_mutex)); //so that men enter one at a time.
+    if(b->people_present==0){ //prevent women from coming in while men exist inside.
         sem_wait(&(b->women_mutex));
     }
     sem_post(&(b->men_mutex));
