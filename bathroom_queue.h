@@ -46,9 +46,7 @@ void bathroom_queue_enqueue(bathroom_queue* bq, bool isMan, int id) {
 person*  bathroom_queue_dequeue(bathroom_queue* bq) {
     //Detect if there is no one in the queue. If so, then hang this function until one person gets enqueued the go on.
     //Otherwise, the function goes on without waiting.
-    if(bq->nextInLine_index == bq->size) {
-        sem_wait(&(bq->dequeue_mutex));
-    }
+    sem_wait(&(bq->dequeue_mutex));
     return &bq->queue[bq->nextInLine_index++];
 }
 

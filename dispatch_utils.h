@@ -21,7 +21,7 @@ void* dispatchMen_fn(void* pointer) {
     dispatch_fns_args_struct* args = (dispatch_fns_args_struct*) pointer;
     for (int i = 0; i < args->count; ++i) {
         bathroom_queue_enqueue(args->bq, true, i);
-        usleep(random()%5000);
+        usleep((__useconds_t) (random() % 50000));
     }
     return NULL;
 }
@@ -30,7 +30,7 @@ void* dispatchWomen_fn(void* pointer) {
     dispatch_fns_args_struct* args = (dispatch_fns_args_struct*) pointer;
     for (int i = 0; i < args->count; ++i) {
         bathroom_queue_enqueue(args->bq, false, i);
-        usleep(random()%5000);
+        usleep((__useconds_t) (random() % 50000));
     }
     return NULL;
 }
