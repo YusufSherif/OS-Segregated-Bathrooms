@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/bathroom.h
+semaphore.h
+-
+stdlib.h
+-
+
+/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/bathroom_queue.h
+stdlib.h
+-
+stdbool.h
+-
+semaphore.h
+-
+person.h
+/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/person.h
+
+/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/dispatch_utils.h
+unistd.h
+-
+
+/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/main.c
+stdio.h
+-
+pthread.h
+-
+semaphore.h
+-
+bathroom_queue.h
+/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/bathroom_queue.h
+dispatch_utils.h
+/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/dispatch_utils.h
+bathroom.h
+/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/bathroom.h
+
+/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/person.h
+stdbool.h
+-
+
