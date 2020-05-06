@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/OS_Segregated_Bathrooms.dir/main.c.o  -o OS_Segregated_Bathrooms 
