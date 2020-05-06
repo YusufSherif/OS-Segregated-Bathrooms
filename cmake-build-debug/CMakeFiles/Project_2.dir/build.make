@@ -60,15 +60,15 @@ include CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/main.c.o: CMakeFiles/Project_2.dir/flags.make
 CMakeFiles/Project_2.dir/main.c.o: ../main.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Project_2.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Project_2.dir/main.c.o   -c "/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/main.c"
+	/usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Project_2.dir/main.c.o   -c "/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/main.c"
 
 CMakeFiles/Project_2.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Project_2.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/main.c" > CMakeFiles/Project_2.dir/main.c.i
+	/usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/main.c" > CMakeFiles/Project_2.dir/main.c.i
 
 CMakeFiles/Project_2.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Project_2.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/main.c" -o CMakeFiles/Project_2.dir/main.c.s
+	/usr/local/bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/main.c" -o CMakeFiles/Project_2.dir/main.c.s
 
 # Object files for target Project_2
 Project_2_OBJECTS = \

@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/main.c" "/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/cmake-build-debug/CMakeFiles/Project_2.dir/main.c.o"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

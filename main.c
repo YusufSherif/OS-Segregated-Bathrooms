@@ -15,7 +15,7 @@ typedef struct goto_bathroom_args {
 
 void * goto_bathroom(void *pointer){ //takes ownership of pointer
     goto_bathroom_args* args = (goto_bathroom_args*) pointer;
-    usleep((__useconds_t) (random() % MAX_BATHROOM_TIME));
+    usleep((random() % MAX_BATHROOM_TIME));
     args->p->isMan?bathroom_man_leaves(args->b):bathroom_woman_leaves(args->b);
     printf(args->p->isMan?"Man with id: %d left\n":"Woman with id: %d left\n",args->p->id);
     free(pointer);
