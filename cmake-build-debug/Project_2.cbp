@@ -8,92 +8,92 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug"/>
+				<Option working_dir="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug"/>
+				<Option working_dir="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Project_2">
-				<Option output="/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Project_2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Project_2/fast">
-				<Option output="/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Project_2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug"/>
+				<Option working_dir="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yusuf/Desktop/OS-Segregated-Bathrooms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project_2">
+				<Option output="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/cmake-build-debug/Project_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project_2/fast">
+				<Option output="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/cmake-build-debug/Project_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project_2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yusufsherif/Desktop/Semester\ 6/OS/Project-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/yusuf/Desktop/OS-Segregated-Bathrooms/bathroom.h">
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/bathroom.h">
 			<Option target="Project_2"/>
 		</Unit>
-		<Unit filename="/home/yusuf/Desktop/OS-Segregated-Bathrooms/bathroom_queue.h">
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/bathroom_queue.h">
 			<Option target="Project_2"/>
 		</Unit>
-		<Unit filename="/home/yusuf/Desktop/OS-Segregated-Bathrooms/dispatch_utils.h">
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/dispatch_utils.h">
 			<Option target="Project_2"/>
 		</Unit>
-		<Unit filename="/home/yusuf/Desktop/OS-Segregated-Bathrooms/main.c">
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/main.c">
 			<Option target="Project_2"/>
 		</Unit>
-		<Unit filename="/home/yusuf/Desktop/OS-Segregated-Bathrooms/person.h">
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/person.h">
 			<Option target="Project_2"/>
 		</Unit>
-		<Unit filename="/home/yusuf/Desktop/OS-Segregated-Bathrooms/CMakeLists.txt">
+		<Unit filename="/Users/yusufsherif/Desktop/Semester 6/OS/Project-2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
