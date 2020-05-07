@@ -33,35 +33,37 @@ void bathroom_init(bathroom* b, unsigned int capacity) {
     sem_init(&(b->full_mutex),0,capacity);
 }
 
-void bathroom_woman_wants_to_enter(bathroom* b) {
+void bathroom_woman_wants_to_enter(bathroom *b, person *next_in_line) {
     sem_wait(&(b->bathroom_entry_mutex));
     sem_wait(&(b->women_mutex));
-    sem_wait(&(b->bathroom_door_mutex));
     sem_wait(&(b->full_mutex));
+    sem_wait(&(b->bathroom_door_mutex));
     if(b->people_present==0){
         sem_wait(&(b->men_mutex));
     }
     b->people_present++;
+    printf("Woman with id: %d is present\n",next_in_line->id);
     sem_post(&(b->bathroom_door_mutex));
     sem_post(&(b->women_mutex));
     sem_post(&(b->bathroom_entry_mutex));
 }
 
-void bathroom_man_wants_to_enter(bathroom* b) {
+void bathroom_man_wants_to_enter(bathroom* b, person *next_in_line) {
     sem_wait(&(b->bathroom_entry_mutex));
-    sem_wait(&(b->men_mutex)); //so that men enter one at a time.
+    sem_wait(&(b->men_mutex)); //to wait for women to yield the bathroom.
+    sem_wait(&(b->full_mutex)); //Wait until bathroom is not full. If not, signal that it is one more person full.
     sem_wait(&(b->bathroom_door_mutex));
-    sem_wait(&(b->full_mutex));
     if(b->people_present==0){ //prevent women from coming in while men exist inside.
         sem_wait(&(b->women_mutex));
     }
     b->people_present++;
+    printf("Man with id: %d is present\n",next_in_line->id);
     sem_post(&(b->bathroom_door_mutex));
-    sem_post(&(b->men_mutex));
+    sem_post(&(b->men_mutex)); //reached in case of no women, used to undo wait above.
     sem_post(&(b->bathroom_entry_mutex));
 }
 
-void bathroom_woman_leaves(bathroom* b){
+void bathroom_woman_leaves(bathroom* b, person * p){
     sem_wait(&(b->bathroom_exit_mutex));
     sem_wait(&(b->bathroom_door_mutex));
     b->people_present--;
@@ -69,11 +71,12 @@ void bathroom_woman_leaves(bathroom* b){
         sem_post(&(b->men_mutex));
     }
     sem_post(&(b->full_mutex));
+    printf("Woman with id: %d left\n",p->id);
     sem_post(&(b->bathroom_door_mutex));
     sem_post(&(b->bathroom_exit_mutex));
 }
 
-void bathroom_man_leaves(bathroom* b){
+void bathroom_man_leaves(bathroom* b, person * p){
     sem_wait(&(b->bathroom_exit_mutex));
     sem_wait(&(b->bathroom_door_mutex));
     b->people_present--;
@@ -81,6 +84,7 @@ void bathroom_man_leaves(bathroom* b){
         sem_post(&(b->women_mutex));
     }
     sem_post(&(b->full_mutex));
+    printf("Man with id: %d left\n",p->id);
     sem_post(&(b->bathroom_door_mutex));
     sem_post(&(b->bathroom_exit_mutex));
 }

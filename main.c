@@ -6,7 +6,7 @@
 #include "dispatch_utils.h"
 #include "bathroom.h"
 
-#define MAX_BATHROOM_TIME 50000
+#define MAX_BATHROOM_TIME 1000000
 
 typedef struct goto_bathroom_args {
     bathroom* b;
@@ -16,8 +16,7 @@ typedef struct goto_bathroom_args {
 void * goto_bathroom(void *pointer){ //takes ownership of pointer
     goto_bathroom_args* args = (goto_bathroom_args*) pointer;
     usleep((random() % MAX_BATHROOM_TIME));
-    args->p->isMan?bathroom_man_leaves(args->b):bathroom_woman_leaves(args->b);
-    printf(args->p->isMan?"Man with id: %d left\n":"Woman with id: %d left\n",args->p->id);
+    args->p->isMan?bathroom_man_leaves(args->b, args->p):bathroom_woman_leaves(args->b, args->p);
     free(pointer);
     return NULL;
 }
@@ -54,8 +53,7 @@ int main() {
         goto_bathroom_args* gotoBathroom_args = calloc(1, sizeof(goto_bathroom_args));
         gotoBathroom_args->b = &b;
         gotoBathroom_args->p = next_in_line;
-        next_in_line->isMan?bathroom_man_wants_to_enter(&b):bathroom_woman_wants_to_enter(&b);
-        printf(next_in_line->isMan?"Man with id: %d is present\n":"Woman with id: %d is present\n",next_in_line->id);
+        next_in_line->isMan?bathroom_man_wants_to_enter(&b, next_in_line): bathroom_woman_wants_to_enter(&b, next_in_line);
         pthread_create(
                 next_in_line->isMan?&men[next_in_line->id]:&women[next_in_line->id],
                 NULL,

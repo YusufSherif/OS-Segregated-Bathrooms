@@ -7,7 +7,7 @@
 
 #include <unistd.h>
 
-#define MAX_WAIT_TIME 100000
+#define MAX_WAIT_TIME 1000000
 
 typedef struct dispatch_fns_args_struct {
     int count;
